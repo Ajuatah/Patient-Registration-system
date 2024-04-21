@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Corona Checker</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+    }
+    input {
+      padding: 10px;
+      margin: 10px;
+    }
+    button {
+      padding: 10px 20px;
+      background-color: #007bff;
+      color: white;
+      border: none;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <h2>Display name</h2>
+  <input type="text" id="name" placeholder="Enter your name">
+  <button onclick="displayMessage()">Display</button>
+
+  <script>
+    function displayMessage() {
+      var nameInput = document.getElementById("name").value;
+      
+
+      if (!(nameInput)) {
+        alert("Please enter a valid name.");
+        return;
+      }
+       else {
+        alert("Your name is " +nameInput);
+       }
+    }
+  </script>
+</body>
+</html>
